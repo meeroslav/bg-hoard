@@ -28,9 +28,6 @@ const games = [
   }
 ];
 
-export const getAllGames = () => games;
-export const getGame = (id: string) => games.find(game => game.id === id);
-
 @Injectable()
 export class AppService {
   public getAllGames = () => games;
