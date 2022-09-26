@@ -10,11 +10,11 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
   styleUrls: ['./game-detail.component.css'],
 })
 export class GameDetailComponent {
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
   game$ = this.route.paramMap.pipe(
     map((params: ParamMap) => params.get('id')),
-    switchMap((id) => this.http.get<any>(`/api/games/${id}`))
+    switchMap((id) => this.http.get<any>(`/api/${id}`))
   );
   formatRating = formatRating;
 }

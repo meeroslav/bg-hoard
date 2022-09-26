@@ -11,6 +11,6 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   formatRating = formatRating;
   title = 'Board Game Hoard';
-  games = this.http.get<any[]>('/api/games');
-  constructor(private http: HttpClient) {}
+  games = this.http.get<any[]>('/api');
+  constructor(private http: HttpClient) { }
 }
