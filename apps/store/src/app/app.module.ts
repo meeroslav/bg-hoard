@@ -12,8 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
-    MatCardModule,
-    StoreUiSharedModule,
     RouterModule.forRoot(
       [
         {
@@ -26,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
+    MatCardModule,
+    StoreUiSharedModule,
     HttpClientModule,
   ],
   providers: [],

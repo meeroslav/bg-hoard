@@ -8,4 +8,4 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   declarations: [HeaderComponent],
   exports: [HeaderComponent],
 })
-export class StoreUiSharedModule { }
+export class StoreUiSharedModule {}

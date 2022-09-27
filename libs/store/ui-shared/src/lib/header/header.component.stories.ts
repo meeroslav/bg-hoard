@@ -1,6 +1,5 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { HeaderComponent } from './header.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
 
 export default {
   title: 'HeaderComponent',
